@@ -10,13 +10,23 @@
     a:hover { text-decoration: underline; }
     .cursor::after { content: "_"; animation: blink 1s infinite; }
     @keyframes blink { 50% { opacity: 0; } }
+    video, audio { display: block; margin: 15px 0; }
   </style>
 </head>
 <body>
   <h1 class="cursor">ACCESS GRANTED – FILE DROP</h1>
-  <a href="SURV_CAM07_1930582.mp3" target="_blank">▶ SURV_CAM07_1930582.mp3</a>
-  <a href="SURV_CAM07_1948502.mp3" target="_blank">▶ SURV_CAM07_1948502.mp3</a>
+
+  <!-- MP4 Video -->
+  <video width="320" height="240" controls>
+    <source src="SURV_CAM07_1930582.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- MP3 Audio -->
+  <audio controls>
+    <source src="SURV_CAM07_1948502.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
 </body>
 </html>
-
-
